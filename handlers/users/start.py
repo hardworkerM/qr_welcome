@@ -22,7 +22,7 @@ import base64
 async def send_info(what_happened, alias, id=None):
     date = datetime.datetime.now()
     text = f'👨‍💻\n@{alias} or id:{id}\n📲\n{what_happened}\n🕐\n{date}'
-    # await bot.send_message(565843474, text)
+    await bot.send_message(565843474, text)
 
 
 @dp.message_handler(CommandStart())

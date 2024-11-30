@@ -10,7 +10,7 @@ from help_functions.parsing.check_data import start_schedule
 async def on_startup(dispatcher):
     # Устанавливаем дефолтные команды
     await set_default_commands(dispatcher)
-    db.create_tables()
+    # db.create_tables()
     # asyncio.create_task(start_schedule())
     # Уведомляет про запуск
     await on_startup_notify(dispatcher)
